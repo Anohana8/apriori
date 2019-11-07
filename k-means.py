@@ -23,4 +23,5 @@ sum_array = np.tile(sum_rows,(m,1))  #创建一个x行y列，数据为x行的sum
 sum_array  = sum_array.T
 normalData = array / sum_array
 normalData = normalData.T     #处理列
+print(normalData)
 save(normalData,'normalData.xls')      #存入当前文件夹下
